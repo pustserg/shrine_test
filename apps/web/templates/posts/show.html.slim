@@ -1,2 +1,8 @@
 h4= post.title
 p= post.content
+
+ul
+  - images.each do |image|
+    li= image.file_url
+
+= render partial: 'image_form', locals: { post: post }

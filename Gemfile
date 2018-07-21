@@ -8,6 +8,8 @@ gem 'pg'
 
 gem 'slim'
 
+gem 'hanami-shrine'
+
 group :development do
   # Code reloading
   # See: http://hanamirb.org/guides/projects/code-reloading

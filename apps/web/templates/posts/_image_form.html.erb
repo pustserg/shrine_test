@@ -1,0 +1,6 @@
+<%=
+  form_for :image, routes.post_images_path(post_id: post.id), method: :post, enctype: 'multipart/form-data' do
+    file_field :file
+    submit 'Add'
+  end
+%>

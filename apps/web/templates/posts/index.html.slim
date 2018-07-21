@@ -1,5 +1,6 @@
 = link_to 'Add', routes.new_post_path
 h4 All posts
 
-- posts.each do |post|
-  li= link_to post.title, routes.post_path(post.id)
+ul
+  - posts.each do |post|
+    li= link_to post.title, routes.post_path(post.id)
