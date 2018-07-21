@@ -1,0 +1,2 @@
+module ShrineTest
+end

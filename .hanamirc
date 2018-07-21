@@ -1,0 +1,3 @@
+project=shrine_test
+test=minitest
+template=slim
