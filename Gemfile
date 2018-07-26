@@ -9,6 +9,7 @@ gem 'pg'
 gem 'slim'
 
 gem 'hanami-shrine'
+gem 'pry'
 
 group :development do
   # Code reloading

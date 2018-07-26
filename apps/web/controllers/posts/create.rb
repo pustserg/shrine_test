@@ -4,7 +4,7 @@ module Web::Controllers::Posts
 
     def call(params)
       if create_post(params)
-        redirect_to posts_path
+        redirect_to routes.posts_path
       else
         self.status = :unprocessable_entity
       end
@@ -13,8 +13,7 @@ module Web::Controllers::Posts
     private
 
     def create_post(params)
-      post_params = params.fetch(:post)
-      return unless post_params
+      post_params = params[:post]
       PostRepository.new.create title: post_params[:title],
                                 content: post_params[:content]
     end

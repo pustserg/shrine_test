@@ -8,4 +8,8 @@ class ImageRepository < Hanami::Repository
   def for_post(post_id)
     images.where(post_id: post_id)
   end
+
+  def find_by_id(id)
+    images.where(id: id).one
+  end
 end

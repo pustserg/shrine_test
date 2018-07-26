@@ -5,7 +5,7 @@ module Web::Views::Posts
     def form
       form_for :post, routes.posts_path do
         text_field :title
-        textarea :content
+        textarea '', name: 'post[content]'
         submit 'Save'
       end
     end
